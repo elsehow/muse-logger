@@ -26,18 +26,12 @@ var timeDevice =
 
   returns an app - a Kefir stream of app states.
   the stream has an additional method stop(),
-  which will disconnect all devices.
-
-  */
-
+  which will disconnect all devices. */
 function run (config) {
-
-  /*
-    a method append(obj)
-    to add stuff to the database
-    we assume database is strictly ordered. */
+  // a method append(obj)
+  // to add stuff to the database
+  // we assume database is strictly ordered.
   var append = db(config.db.name)
-
 
   // construct a list of devices
   var timeS = timeDevice(config.timeserver.url,
@@ -62,15 +56,12 @@ function run (config) {
     the application state stream we return
     is a stream of states from all devices,
     and any errors we encounter
-    saving device states in the db
-    */
+    saving device states in the db */
   var s = stateS.merge(dbSaveErrorS)
-
   // attach the stop() method
   s.stop = stop
   // and return the state stream
   return s
 }
-
 
 module.exports = run
