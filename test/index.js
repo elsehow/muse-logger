@@ -1,3 +1,3 @@
-var mod = require('..')
-
-console.log('imported', mod)
+// require('./db.spec.js')
+// require('./timeserver-device.spec.js')
+require('./integration.js')

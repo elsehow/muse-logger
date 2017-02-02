@@ -1,14 +1,20 @@
 {
+  "name": "muse-logger"
   "author": "elsehow",
   "license": "BSD-3-Clause",
   "main": "src/index.js",
   "scripts": {
-    "test": "tape test/*.js",
+    "test": "tape test/index.js|tap-spec",
     "watch": "runwatch \"**/*.js\" -r \"npm test\""
   },
   "devDependencies": {
     "runwatch": "^0.1.3",
+    "tap-spec": "^4.1.1",
     "tape": "^4.5.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "kefir": "^3.7.1",
+    "pouchdb": "^6.1.1",
+    "simple-get": "^2.4.0"
+  }
 }

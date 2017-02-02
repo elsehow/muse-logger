@@ -1,10 +1,11 @@
-# empty-module
+# muse-logger
 
-description
+log and label data from the [Interaxon Muse](http://www.choosemuse.com/).
 
 <!-- see [details.md](details.md). -->
 
 <!-- (interested in contributing?) see [CONTRIBUTING.md](CONTRIBUTING.md). -->
+
 
 ## example
 
@@ -14,7 +15,7 @@ description
 ## install
 
 ```
-npm i .......
+npm i
 ```
 
 ## license
