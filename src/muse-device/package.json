@@ -1,0 +1,19 @@
+{
+  "name": "muse-device",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "simple-charm": "^0.3.5"
+  },
+  "dependencies": {
+    "node-muse": "^1.1.0",
+    "simple-charm": "^0.3.5"
+  }
+}
